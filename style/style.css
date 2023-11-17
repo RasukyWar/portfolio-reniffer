@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+@import url('https://fonts.google.com/specimen/Black+Ops+One?query=black+');
 
 * {
     margin: 0;
@@ -38,7 +38,7 @@ body {
   }
   
   .cabecalho-menu-links {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'BlackOpsOne', sans-serif;
     font-size: 24px;
     font-weight: 600;
     color: white;
@@ -77,10 +77,24 @@ body {
     order: 2;
   }
   
-  .apresentacao-conteudo-titulo {
+  @keyframes color-pulse-title {
+    0% {
+        color: #ff5500;
+    }
+    50% {
+        color: #818181; /* Cor durante a animação */
+    }
+    100% {
+        color: #ff5500;
+    }
+}
+
+.apresentacao-conteudo-titulo {
+    /* Adiciona a animação 'color-pulse-title' com uma duração de 2 segundos e repetição infinita */
+    animation: color-pulse-title 4s infinite;
     font-size: 36px;
     font-family: 'Krona One', sans-serif;
-    text-align: justify;
+    text-align: center;
   }
   
 
@@ -122,8 +136,22 @@ body {
 
 }
 
-/* Estilos para elementos com a classe .botao1 */
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
 .botao1 {
+    /* ... (seu estilo existente) */
+
+    /* Adiciona a animação 'fade-in' com uma duração de 1.5 segundos e repetição única */
+    animation: fade-in 1.5s ease-in-out;
     /* Define a cor de fundo como preto */
     background-color: #000;
 
@@ -207,6 +235,31 @@ body {
     left: 100%;
 }
 
+@keyframes grow-on-hover {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+.botao1 {
+    /* ... (seu estilo existente) */
+
+    /* Adiciona a animação 'grow-on-hover' com uma duração de 0.3 segundos e efeito suavizado */
+    transition: transform 0.3s ease-in-out;
+
+    /* Define um cursor diferente ao passar o mouse */
+    cursor: pointer;
+}
+
+.botao1:hover {
+    /* Quando o mouse passa por cima, aplica a animação de crescimento */
+    animation: grow-on-hover 0.3s ease-in-out;
+}
+
+
 /* Elemento <i> dentro de elementos com a classe .botao1 */
 .botao1 i {
     /* Define a posição como absoluta para posicionamento personalizado */
@@ -229,8 +282,22 @@ body {
 /* fim da estilização ancora 1(botao1) */
 
 /* Inicio da estilização ancora 2(botao2) */
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
 
 .botao2 {
+    /* ... (seu estilo existente) */
+
+    /* Adiciona a animação 'fade-in' com uma duração de 1.5 segundos e repetição única */
+    animation: fade-in 1.5s ease-in-out;
     background-color: #000;
     color: #0077B5; /* Cor padrão do LinkedIn */
     width: 500px;
@@ -264,6 +331,31 @@ body {
     left: 100%;
 }
 
+@keyframes grow-on-hover {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+.botao2 {
+    /* ... (seu estilo existente) */
+
+    /* Adiciona a animação 'grow-on-hover' com uma duração de 0.3 segundos e efeito suavizado */
+    transition: transform 0.3s ease-in-out;
+
+    /* Define um cursor diferente ao passar o mouse */
+    cursor: pointer;
+}
+
+.botao2:hover {
+    /* Quando o mouse passa por cima, aplica a animação de crescimento */
+    animation: grow-on-hover 0.3s ease-in-out;
+}
+
+
 .botao2 i {
     position: absolute;
     font-size: 60px;
@@ -275,8 +367,22 @@ body {
 /* fim da estilização ancora2(botao2) */
 
 /* inicio estilizaçãp ancora3(botao3) */
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
 
 .botao3 {
+    /* ... (seu estilo existente) */
+
+    /* Adiciona a animação 'fade-in' com uma duração de 1.5 segundos e repetição única */
+    animation: fade-in 1.5s ease-in-out;
     background-color: #000;
     align-items: center;
     color: #333; /* Cor padrão do GitHub */
@@ -312,6 +418,31 @@ body {
     left: 100%;
 }
 
+@keyframes grow-on-hover {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+.botao3 {
+    /* ... (seu estilo existente) */
+
+    /* Adiciona a animação 'grow-on-hover' com uma duração de 0.3 segundos e efeito suavizado */
+    transition: transform 0.3s ease-in-out;
+
+    /* Define um cursor diferente ao passar o mouse */
+    cursor: pointer;
+}
+
+.botao3:hover {
+    /* Quando o mouse passa por cima, aplica a animação de crescimento */
+    animation: grow-on-hover 0.3s ease-in-out;
+}
+
+
 .botao3 i {
     position: absolute;
     font-size: 60px;
@@ -323,8 +454,22 @@ body {
 /* fim da estilização ancora3(botao3) */
 
 /* inicio estilização ancora4(botao4) */
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
 
 .botao4 {
+    /* ... (seu estilo existente) */
+
+    /* Adiciona a animação 'fade-in' com uma duração de 1.5 segundos e repetição única */
+    animation: fade-in 1.5s ease-in-out;
     background-color: #000;
     align-items: center;
     color: #25D366; /* Cor padrão do WhatsApp */
@@ -360,6 +505,31 @@ body {
     left: 100%;
 }
 
+@keyframes grow-on-hover {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+.botao4 {
+    /* ... (seu estilo existente) */
+
+    /* Adiciona a animação 'grow-on-hover' com uma duração de 0.3 segundos e efeito suavizado */
+    transition: transform 0.3s ease-in-out;
+
+    /* Define um cursor diferente ao passar o mouse */
+    cursor: pointer;
+}
+
+.botao4:hover {
+    /* Quando o mouse passa por cima, aplica a animação de crescimento */
+    animation: grow-on-hover 0.3s ease-in-out;
+}
+
+
 .botao4 i {
     position: absolute;
     font-size: 60px;
@@ -371,8 +541,22 @@ body {
 /* fim estilização ancora4(botao4) */
 
 /* inicio estilização ancora5(botao5) */
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
 
 .botao5 {
+    /* ... (seu estilo existente) */
+
+    /* Adiciona a animação 'fade-in' com uma duração de 1.5 segundos e repetição única */
+    animation: fade-in 1.5s ease-in-out;
     background-color: #000;
     align-items: center;
     color: #b61ca9; /* Cor padrão do Instagram */
@@ -408,6 +592,31 @@ body {
 .botao5:hover::before {
     left: 100%;
 }
+
+@keyframes grow-on-hover {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+.botao5 {
+    /* ... (seu estilo existente) */
+
+    /* Adiciona a animação 'grow-on-hover' com uma duração de 0.3 segundos e efeito suavizado */
+    transition: transform 0.3s ease-in-out;
+
+    /* Define um cursor diferente ao passar o mouse */
+    cursor: pointer;
+}
+
+.botao5:hover {
+    /* Quando o mouse passa por cima, aplica a animação de crescimento */
+    animation: grow-on-hover 0.3s ease-in-out;
+}
+
 
 .botao5 i {
     position: absolute;
